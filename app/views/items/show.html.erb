@@ -6,7 +6,7 @@
     <div class='item-details'>
       <h1><%= @item.title %></h1>
       <h4><%= @item.category.title %></h4>
-      <p>Details: <%= @item.description %></p>
+      <p>Details More: <%= @item.description %></p>
       <p>Price: <%= number_to_currency(@item.price) %></p>
       <% if @item.active? %>
       <%= button_to "Add to Cart", cart_path(item_id: @item.id) %>
